@@ -41,7 +41,7 @@ function crearCartaBanda(nombre, fecha, lugar, hora, direccion, mapa, imagenSrc,
 
     nuevaCarta.querySelector('.carta').addEventListener('click', () => {
         localStorage.setItem('selectedShow', JSON.stringify({ nombre, fecha, lugar, hora, direccion, mapa, imagenSrc, descripcion }));
-        window.location.href = '/sonica/evento';
+        window.location.href = '/evento.html';
     });
 
     return nuevaCarta;
